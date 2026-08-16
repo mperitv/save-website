@@ -2,8 +2,8 @@
     font-family: 'PlayfairDisplay';
     src: url('fonts/PlayfairDisplay-MediumItalic.ttf') format('truetype');
 }
-header {
-    margin-top: 100px;
+body{
+    background-color: #ebe9dd;
 }
 #rsvp-button{
     margin: 40px auto;
@@ -16,7 +16,7 @@ h3 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 1.6;
 }
 a{
@@ -31,14 +31,32 @@ button {
     margin-top: 30px;
     background-color: #fff3f4;
     font-family: 'PlayfairDisplay', sans-serif;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
-
 button:hover {
     background-color: #e1374e;
     color: white;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(255, 71, 87, 0.5);
 }
 #ysys{
     text-align: center;
+}
+.card {
+    animation: fadeUp 0.7s ease both;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 header{
     max-width: 800px;
@@ -57,6 +75,14 @@ main {
     margin: 30px auto;
 
 }
+mark {
+    background-color: #ffe381;
+    color: #d63031;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+
 #save-introduction{
     border: 5px solid #e1374e;
     border-radius: 50px;
@@ -64,6 +90,7 @@ main {
     margin: 10px auto;
     padding: 10px 20px 10px 20px;
     max-width: 800px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 #how-it-works{
     border: 5px solid #e1374e;
@@ -71,4 +98,5 @@ main {
     background-color: #fff3f4;
     padding: 20px 60px 20px 60px;
     max-width: 800px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
